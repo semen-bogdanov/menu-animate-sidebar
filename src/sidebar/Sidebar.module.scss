@@ -1,0 +1,50 @@
+.sidebar {
+	@apply fixed left-4 top-4 rounded-lg bg-white/5 w-56 py-2 shadow-lg whitespace-nowrap overflow-hidden;
+
+	&.collapsed {
+		.menu {
+			> a {
+				@apply px-2 justify-center flex items-center;
+
+				&:hover {
+					background: transparent !important;
+				}
+
+				&:first-child {
+					@apply mt-9;
+				}
+			}
+		}
+		.toggle {
+			@apply top-0 left-[0.1rem] w-12 h-12;
+		}
+	}
+
+	&.canHover {
+		.menu {
+			> a {
+				&:hover {
+					@apply bg-white/10;
+
+					> svg {
+						@apply text-purple-400 transition-colors duration-300 ease-in-out;
+					}
+				}
+			}
+		}
+	}
+
+	.menu {
+		> a {
+			@apply grid  items-center gap-3 py-3.5 px-5 transition-colors duration-300 ease-in-out;
+			grid-template-columns: 1fr 6fr;
+		}
+	}
+	.toggle {
+		@apply absolute top-1 right-1   flex  rounded-full w-10 h-10  
+				items-center justify-center cursor-pointer opacity-50 transition-opacity duration-300 ease-in-out;
+		&:hover {
+			@apply opacity-100;
+		}
+	}
+}
