@@ -1,5 +1,6 @@
 {
   "name": "animation-sidebar-react-framer-motion",
+  "author": "Semen Bogdanov <semen-bogdanov@yandex.ru>",
   "private": true,
   "version": "0.0.0",
   "type": "module",
