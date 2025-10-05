@@ -1,4 +1,5 @@
 {
+  "author": "Semen Bogdanov <webdevelopments@yandex.ru>",
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
